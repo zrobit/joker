@@ -11,7 +11,7 @@ var gulp = require('gulp'),
 
 gulp.task('watch', function () {
   gulp.src(['templates/**/*.jade', 'styles/**/*.styl'])
-    .pipe(watch())
+    .pipe(watch({glob: ['templates/**/*.jade', 'styles/**/*.styl']}))
     .pipe(livereload());
 });
 
