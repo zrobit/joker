@@ -1,4 +1,20 @@
 extends _layout
   
 block content
-
+  .home
+    section.home-main
+      .jokes
+        for x, i in new Array(15)
+          .joke
+            h2 La Amiga
+            p 
+              |- ¿Bailamos?
+              br
+              |- Claro. ¿Pero quién saca a mi amiga?
+              br
+              |- Ahhh, por eso no te preocupes. ¡SEGURIDAAAAD!
+      nav.nav-pages
+        a.btn-previous() Anterior
+        a.btn-next() Siguiente
+    aside.home-aside
+      .ad-box
